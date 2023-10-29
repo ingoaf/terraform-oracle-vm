@@ -1,0 +1,7 @@
+terraform.tfvars
+.terraform
+terraform.tfstate
+*.backup
+*.lock.hcl
+ilija-test
+ilija-test.pub

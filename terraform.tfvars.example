@@ -1,0 +1,16 @@
+compartment_id      = "ocid1.tenancy.oc1..<my-tenancy>"
+user_id             = "ocid1.user.oc1..<my-user>"
+subnet_id           = "ocid1.subnet.oc1.eu-frankfurt-1.<my-subnet>"
+availability_domain = "GPff:EU-FRANKFURT-1-AD-2"
+shape               = "VM.Standard.A1.Flex"
+shape_config = {
+  memory_in_gbs = 24
+  ocpus         = 4
+}
+source_details = {
+  boot_volume_size_in_gbs = "200"
+  source_id               = "ocid1.image.oc1.eu-frankfurt-1.aaaaaaaap362udryq4igudmoxz2b5hpkzlhrelii7beusqhps33mxfwn2izq"
+}
+instance_ssh_public_key_path    = "./path-to-instance-public-key"
+oracle_user_ssh_public_key_path = "~/.oci/name-of-public-key-to-authenticate-to-oracle-cloud.pem"
+oracle_user_fingerprint = "f7:63:0f:34:eb:80:7a:d7:ff:44:99:04:88:26:73:c5"
